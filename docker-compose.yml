@@ -1,11 +1,11 @@
 version: '3'
 services:
-# product-service:
-#  build: ./product
-#   volumes:
-#      - ./product:/usr/src/app
-#    ports:
-#      - 5001:80
+ product-service:
+  build: ./product
+   volumes:
+      - ./product:/usr/src/app
+    ports:
+      - 5001:80
   website:
     #image: php:apache
     image: 6162/my-shop
@@ -14,5 +14,5 @@ services:
       - ./website:/var/www/html
     ports:
       - 5000:80
-  #  depends_on:
-  #    - product-service
+    depends_on:
+      - product-service
