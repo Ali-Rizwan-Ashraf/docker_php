@@ -1,7 +1,7 @@
 version: '3'
 services:
   product-service:
-    image: 6162/my-shop
+    image: 6162/test-service
     build: ./product
     volumes:
       - ./product:/usr/src/app
@@ -10,7 +10,7 @@ services:
 
   website:
     #image: php:apache
-    image: 6162/my-shop
+    image: 6162/test-web
     build: ./website
     volumes:
       - ./website:/var/www/html
