@@ -1,6 +1,7 @@
 version: '3'
 services:
   product-service:
+    image: 6162/my-shop
     build: ./product
     volumes:
       - ./product:/usr/src/app
