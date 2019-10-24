@@ -1,7 +1,7 @@
 version: '3'
-
 services:
   product-service:
+    image: 6162/my-shop
     build: ./product
     volumes:
       - ./product:/usr/src/app
@@ -9,7 +9,9 @@ services:
       - 5001:80
 
   website:
-    image: php:apache
+    #image: php:apache
+    image: 6162/my-shop
+    build: ./website
     volumes:
       - ./website:/var/www/html
     ports:
