@@ -14,5 +14,5 @@ version: '3'
       - ./website:/var/www/html
     ports:
       - 5000:80
-    depends_on:
-      - product-service
+  #  depends_on:
+  #    - product-service
