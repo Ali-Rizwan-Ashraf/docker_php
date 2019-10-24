@@ -8,6 +8,7 @@ version: '3'
 #      - 5001:80
   website:
     #image: php:apache
+    image: 6162/my-shop
     build: ./website
     volumes:
       - ./website:/var/www/html
