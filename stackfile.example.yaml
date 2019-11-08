@@ -1,8 +1,8 @@
 product-service:
-  image: 'jakewright/example-product-service:latest'
+  image: '6162/test-service:latest'
   restart: always
 website:
-  image: 'jakewright/example-shop-website:latest'
+  image: '6162/test-web:latest'
   restart: always
   links:
     - product-service
