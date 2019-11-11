@@ -8,3 +8,7 @@ In this tutorial, I show how to use Docker Cloud to easily deploy Docker contain
 # Getting started
 
 This directory contains the source code from the tutorial. It is exactly the same as the code in `02-docker-compose` but with the addition of a Dockerfile in the `website` directory.
+
+
+
+Note: Code doesn't belong to me, it's being used, modified and tested for personal purposes (Learning)
